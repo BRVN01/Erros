@@ -1,0 +1,3304 @@
+root@cloudinit:~/cobbler# make install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/cobbler
+copying cobbler/module_loader.py -> build/lib/cobbler
+copying cobbler/tftpgen.py -> build/lib/cobbler
+copying cobbler/remote.py -> build/lib/cobbler
+copying cobbler/download_manager.py -> build/lib/cobbler
+copying cobbler/utils.py -> build/lib/cobbler
+copying cobbler/grub.py -> build/lib/cobbler
+copying cobbler/validate.py -> build/lib/cobbler
+copying cobbler/cobblerd.py -> build/lib/cobbler
+copying cobbler/template_api.py -> build/lib/cobbler
+copying cobbler/clogger.py -> build/lib/cobbler
+copying cobbler/autoinstallgen.py -> build/lib/cobbler
+copying cobbler/cli.py -> build/lib/cobbler
+copying cobbler/power_manager.py -> build/lib/cobbler
+copying cobbler/cexceptions.py -> build/lib/cobbler
+copying cobbler/resource.py -> build/lib/cobbler
+copying cobbler/serializer.py -> build/lib/cobbler
+copying cobbler/configgen.py -> build/lib/cobbler
+copying cobbler/yumgen.py -> build/lib/cobbler
+copying cobbler/settings.py -> build/lib/cobbler
+copying cobbler/field_info.py -> build/lib/cobbler
+copying cobbler/autoinstall_manager.py -> build/lib/cobbler
+copying cobbler/__init__.py -> build/lib/cobbler
+copying cobbler/api.py -> build/lib/cobbler
+copying cobbler/templar.py -> build/lib/cobbler
+copying cobbler/services.py -> build/lib/cobbler
+creating build/lib/cobbler/items
+copying cobbler/items/mgmtclass.py -> build/lib/cobbler/items
+copying cobbler/items/system.py -> build/lib/cobbler/items
+copying cobbler/items/profile.py -> build/lib/cobbler/items
+copying cobbler/items/item.py -> build/lib/cobbler/items
+copying cobbler/items/package.py -> build/lib/cobbler/items
+copying cobbler/items/image.py -> build/lib/cobbler/items
+copying cobbler/items/__init__.py -> build/lib/cobbler/items
+copying cobbler/items/file.py -> build/lib/cobbler/items
+copying cobbler/items/repo.py -> build/lib/cobbler/items
+copying cobbler/items/distro.py -> build/lib/cobbler/items
+creating build/lib/cobbler/web
+copying cobbler/web/views.py -> build/lib/cobbler/web
+copying cobbler/web/field_ui_info.py -> build/lib/cobbler/web
+copying cobbler/web/manage.py -> build/lib/cobbler/web
+copying cobbler/web/urls.py -> build/lib/cobbler/web
+copying cobbler/web/settings.py -> build/lib/cobbler/web
+copying cobbler/web/__init__.py -> build/lib/cobbler/web
+creating build/lib/cobbler/modules
+copying cobbler/modules/scm_track.py -> build/lib/cobbler/modules
+copying cobbler/modules/nsupdate_add_system_post.py -> build/lib/cobbler/modules
+copying cobbler/modules/nsupdate_delete_system_pre.py -> build/lib/cobbler/modules
+copying cobbler/modules/__init__.py -> build/lib/cobbler/modules
+copying cobbler/modules/sync_post_restart_services.py -> build/lib/cobbler/modules
+copying cobbler/modules/sync_post_wingen.py -> build/lib/cobbler/modules
+creating build/lib/cobbler/actions
+copying cobbler/actions/acl.py -> build/lib/cobbler/actions
+copying cobbler/actions/sync.py -> build/lib/cobbler/actions
+copying cobbler/actions/hardlink.py -> build/lib/cobbler/actions
+copying cobbler/actions/check.py -> build/lib/cobbler/actions
+copying cobbler/actions/dlcontent.py -> build/lib/cobbler/actions
+copying cobbler/actions/litesync.py -> build/lib/cobbler/actions
+copying cobbler/actions/status.py -> build/lib/cobbler/actions
+copying cobbler/actions/replicate.py -> build/lib/cobbler/actions
+copying cobbler/actions/report.py -> build/lib/cobbler/actions
+copying cobbler/actions/log.py -> build/lib/cobbler/actions
+copying cobbler/actions/reposync.py -> build/lib/cobbler/actions
+copying cobbler/actions/__init__.py -> build/lib/cobbler/actions
+copying cobbler/actions/buildiso.py -> build/lib/cobbler/actions
+creating build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/systems.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/images.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/distros.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/mgmtclasses.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/manager.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/repos.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/__init__.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/packages.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/collection.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/profiles.py -> build/lib/cobbler/cobbler_collections
+copying cobbler/cobbler_collections/files.py -> build/lib/cobbler/cobbler_collections
+creating build/lib/cobbler/web/templatetags
+copying cobbler/web/templatetags/site.py -> build/lib/cobbler/web/templatetags
+copying cobbler/web/templatetags/__init__.py -> build/lib/cobbler/web/templatetags
+creating build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/isc.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/import_signatures.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/tftpd_py.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/genders.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/bind.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/dnsmasq.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/in_tftpd.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/ndjbdns.py -> build/lib/cobbler/modules/managers
+copying cobbler/modules/managers/__init__.py -> build/lib/cobbler/modules/managers
+creating build/lib/cobbler/modules/serializers
+copying cobbler/modules/serializers/mongodb.py -> build/lib/cobbler/modules/serializers
+copying cobbler/modules/serializers/__init__.py -> build/lib/cobbler/modules/serializers
+copying cobbler/modules/serializers/file.py -> build/lib/cobbler/modules/serializers
+creating build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/post_log.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/post_puppet.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/post_power.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/pre_log.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/pre_clear_anamon_logs.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/post_report.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/__init__.py -> build/lib/cobbler/modules/installation
+copying cobbler/modules/installation/pre_puppet.py -> build/lib/cobbler/modules/installation
+creating build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/denyall.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/passthru.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/configfile.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/pam.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/spacewalk.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/testing.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/__init__.py -> build/lib/cobbler/modules/authentication
+copying cobbler/modules/authentication/ldap.py -> build/lib/cobbler/modules/authentication
+creating build/lib/cobbler/modules/authorization
+copying cobbler/modules/authorization/configfile.py -> build/lib/cobbler/modules/authorization
+copying cobbler/modules/authorization/ownership.py -> build/lib/cobbler/modules/authorization
+copying cobbler/modules/authorization/__init__.py -> build/lib/cobbler/modules/authorization
+copying cobbler/modules/authorization/allowall.py -> build/lib/cobbler/modules/authorization
+running build_scripts
+creating build/scripts-3.8
+copying and adjusting bin/cobbler -> build/scripts-3.8
+copying and adjusting bin/cobblerd -> build/scripts-3.8
+copying and adjusting bin/cobbler-ext-nodes -> build/scripts-3.8
+changing mode of build/scripts-3.8/cobbler from 644 to 755
+changing mode of build/scripts-3.8/cobblerd from 644 to 755
+changing mode of build/scripts-3.8/cobbler-ext-nodes from 644 to 755
+running build_man
+Running Sphinx v1.8.5
+loading translations [en]... done
+making output directory...
+loading intersphinx inventory from https://docs.python.org/3/objects.inv...
+building [mo]: targets for 0 po files that are out of date
+building [man]: all manpages
+updating environment: 27 added, 0 changed, 0 removed
+reading sources... [100%] user-guide/wingen                                                                                        
+WARNING: autodoc: failed to import module 'api' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/api.py", line 29, in <module>
+    from cobbler.actions import status, dlcontent, hardlink, sync, buildiso, replicate, report, log, acl, check, reposync
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'autoinstall_manager' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'autoinstallgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'cli' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cli.py", line 33, in <module>
+    from cobbler.items import package, system, image, profile, repo, mgmtclass, distro, file
+  File "/root/cobbler/cobbler/items/package.py", line 21, in <module>
+    from cobbler import resource
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'clogger' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'cobblerd' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobblerd.py", line 28, in <module>
+    from cobbler import remote
+  File "/root/cobbler/cobbler/remote.py", line 35, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'configgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/configgen.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'module_loader' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'power_manager' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/power_manager.py", line 34, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'remote' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/remote.py", line 35, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'resource' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'serializer' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/serializer.py", line 30, in <module>
+    from cobbler import module_loader
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'services' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/services.py", line 30, in <module>
+    from cobbler.cobbler_collections import manager
+  File "/root/cobbler/cobbler/cobbler_collections/manager.py", line 29, in <module>
+    from cobbler.cobbler_collections import files, systems, mgmtclasses, distros, profiles, repos, packages, images
+  File "/root/cobbler/cobbler/cobbler_collections/files.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'settings' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/settings.py", line 26, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'templar' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'template_api' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/template_api.py", line 30, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'tftpgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/tftpgen.py", line 30, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'utils' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'yumgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/yumgen.py", line 29, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'acl' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/acl.py", line 29, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'buildiso' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/buildiso.py", line 32, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'check' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/check.py", line 27, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'dlcontent' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/dlcontent.py", line 26, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'hardlink' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/hardlink.py", line 25, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'litesync' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'log' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/log.py", line 29, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'replicate' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/replicate.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'report' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/report.py", line 22, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'reposync' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/reposync.py", line 38, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'status' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'sync' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/sync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'collection' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'distros' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/distros.py", line 24, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'files' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/files.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'images' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/images.py", line 14, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'manager' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/manager.py", line 29, in <module>
+    from cobbler.cobbler_collections import files, systems, mgmtclasses, distros, profiles, repos, packages, images
+  File "/root/cobbler/cobbler/cobbler_collections/files.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'mgmtclasses' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/mgmtclasses.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'packages' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/packages.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'profiles' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/profiles.py", line 21, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'repos' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/repos.py", line 23, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'systems' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/systems.py", line 21, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'distro' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/distro.py", line 23, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'file' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/file.py", line 21, in <module>
+    from cobbler import resource
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'image' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/image.py", line 23, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'item' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'mgmtclass' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/mgmtclass.py", line 21, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'package' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/package.py", line 21, in <module>
+    from cobbler import resource
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'profile' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/profile.py", line 21, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'repo' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/repo.py", line 22, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'system' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/system.py", line 21, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'nsupdate_add_system_post' from module 'cobbler.modules'; the following exception was raised:
+No module named 'dns'
+WARNING: autodoc: failed to import module 'nsupdate_delete_system_pre' from module 'cobbler.modules'; the following exception was raised:
+No module named 'dns'
+WARNING: autodoc: failed to import module 'scm_track' from module 'cobbler.modules'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/scm_track.py", line 25, in <module>
+    import cobbler.utils as utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'sync_post_restart_services' from module 'cobbler.modules'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/sync_post_restart_services.py", line 2, in <module>
+    import cobbler.module_loader as module_loader
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'configfile' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/configfile.py", line 27, in <module>
+    from cobbler.module_loader import get_module_name
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'ldap' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/ldap.py", line 29, in <module>
+    import cobbler.api as cobbler_api
+  File "/root/cobbler/cobbler/api.py", line 29, in <module>
+    from cobbler.actions import status, dlcontent, hardlink, sync, buildiso, replicate, report, log, acl, check, reposync
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+/root/cobbler/cobbler/modules/authentication/pam.py:docstring of cobbler.modules.authentication.pam.authenticate:2: WARNING: Field list ends without a blank line; unexpected unindent.
+WARNING: autodoc: failed to import module 'passthru' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/passthru.py", line 17, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'spacewalk' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/spacewalk.py", line 25, in <module>
+    from cobbler.utils import log_exc
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'post_puppet' from module 'cobbler.modules.installation'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/installation/post_puppet.py", line 11, in <module>
+    import cobbler.utils as utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'post_report' from module 'cobbler.modules.installation'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/installation/post_report.py", line 12, in <module>
+    import cobbler.templar as templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'pre_puppet' from module 'cobbler.modules.installation'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/installation/pre_puppet.py", line 12, in <module>
+    import cobbler.utils as utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'bind' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/bind.py", line 31, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'dnsmasq' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/dnsmasq.py", line 28, in <module>
+    import cobbler.templar as templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'genders' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/genders.py", line 5, in <module>
+    import cobbler.templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'import_signatures' from module 'cobbler.modules.managers'; the following exception was raised:
+No module named 'magic'
+WARNING: autodoc: failed to import module 'in_tftpd' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/in_tftpd.py", line 25, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'isc' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/isc.py", line 29, in <module>
+    import cobbler.templar as templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'ndjbdns' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/ndjbdns.py", line 30, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'tftpd_py' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/tftpd_py.py", line 22, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'file' from module 'cobbler.modules.serializers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/serializers/file.py", line 30, in <module>
+    import cobbler.api as capi
+  File "/root/cobbler/cobbler/api.py", line 29, in <module>
+    from cobbler.actions import status, dlcontent, hardlink, sync, buildiso, replicate, report, log, acl, check, reposync
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'urls' from module 'cobbler.web'; the following exception was raised:
+No module named 'django'
+WARNING: autodoc: failed to import module 'views' from module 'cobbler.web'; the following exception was raised:
+No module named 'django'
+WARNING: autodoc: failed to import module 'site' from module 'cobbler.web.templatetags'; the following exception was raised:
+No module named 'django'
+/root/cobbler/docs/developer-guide.rst:83: WARNING: Error in "code-block" directive:
+1 argument(s) required, 0 supplied.
+
+.. code-block::
+
+   make clean
+   docker-compose build --parallel
+   docker-compose up
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+writing... cobbler.1 { } /root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+cobblerd.8 { } cobbler.conf.5 { } 
+build succeeded, 91 warnings.
+
+The manual pages are in build/sphinx/man.
+running build_cfg
+# Debian/Ubuntu requires an additional parameter in setup.py
+running install
+running build
+running build_py
+running build_scripts
+running build_man
+Running Sphinx v1.8.5
+loading translations [en]... done
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [man]: all manpages
+updating environment: [] 0 added, 11 changed, 0 removed
+reading sources... [100%] code-autodoc/cobbler.web.templatetags                                                                    
+WARNING: autodoc: failed to import module 'api' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/api.py", line 29, in <module>
+    from cobbler.actions import status, dlcontent, hardlink, sync, buildiso, replicate, report, log, acl, check, reposync
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'autoinstall_manager' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'autoinstallgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'cli' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cli.py", line 33, in <module>
+    from cobbler.items import package, system, image, profile, repo, mgmtclass, distro, file
+  File "/root/cobbler/cobbler/items/package.py", line 21, in <module>
+    from cobbler import resource
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'clogger' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'cobblerd' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobblerd.py", line 28, in <module>
+    from cobbler import remote
+  File "/root/cobbler/cobbler/remote.py", line 35, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'configgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/configgen.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'module_loader' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'power_manager' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/power_manager.py", line 34, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'remote' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/remote.py", line 35, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'resource' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'serializer' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/serializer.py", line 30, in <module>
+    from cobbler import module_loader
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'services' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/services.py", line 30, in <module>
+    from cobbler.cobbler_collections import manager
+  File "/root/cobbler/cobbler/cobbler_collections/manager.py", line 29, in <module>
+    from cobbler.cobbler_collections import files, systems, mgmtclasses, distros, profiles, repos, packages, images
+  File "/root/cobbler/cobbler/cobbler_collections/files.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'settings' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/settings.py", line 26, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'templar' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'template_api' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/template_api.py", line 30, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'tftpgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/tftpgen.py", line 30, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'utils' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'yumgen' from module 'cobbler'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/yumgen.py", line 29, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'acl' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/acl.py", line 29, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'buildiso' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/buildiso.py", line 32, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'check' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/check.py", line 27, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'dlcontent' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/dlcontent.py", line 26, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'hardlink' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/hardlink.py", line 25, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'litesync' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'log' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/log.py", line 29, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'replicate' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/replicate.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'report' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/report.py", line 22, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'reposync' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/reposync.py", line 38, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'status' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'sync' from module 'cobbler.actions'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/actions/sync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'collection' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'distros' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/distros.py", line 24, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'files' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/files.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'images' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/images.py", line 14, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'manager' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/manager.py", line 29, in <module>
+    from cobbler.cobbler_collections import files, systems, mgmtclasses, distros, profiles, repos, packages, images
+  File "/root/cobbler/cobbler/cobbler_collections/files.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'mgmtclasses' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/mgmtclasses.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'packages' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/packages.py", line 21, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'profiles' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/profiles.py", line 21, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'repos' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/repos.py", line 23, in <module>
+    from cobbler.cobbler_collections import collection
+  File "/root/cobbler/cobbler/cobbler_collections/collection.py", line 23, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'systems' from module 'cobbler.cobbler_collections'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/cobbler_collections/systems.py", line 21, in <module>
+    from cobbler.actions import litesync
+  File "/root/cobbler/cobbler/actions/litesync.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'distro' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/distro.py", line 23, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'file' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/file.py", line 21, in <module>
+    from cobbler import resource
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'image' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/image.py", line 23, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'item' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'mgmtclass' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/mgmtclass.py", line 21, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'package' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/package.py", line 21, in <module>
+    from cobbler import resource
+  File "/root/cobbler/cobbler/resource.py", line 17, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'profile' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/profile.py", line 21, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'repo' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/repo.py", line 22, in <module>
+    from cobbler.items import item
+  File "/root/cobbler/cobbler/items/item.py", line 19, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'system' from module 'cobbler.items'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/items/system.py", line 21, in <module>
+    from cobbler import autoinstall_manager
+  File "/root/cobbler/cobbler/autoinstall_manager.py", line 5, in <module>
+    from cobbler import autoinstallgen
+  File "/root/cobbler/cobbler/autoinstallgen.py", line 28, in <module>
+    from cobbler import templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'nsupdate_add_system_post' from module 'cobbler.modules'; the following exception was raised:
+No module named 'dns'
+WARNING: autodoc: failed to import module 'nsupdate_delete_system_pre' from module 'cobbler.modules'; the following exception was raised:
+No module named 'dns'
+WARNING: autodoc: failed to import module 'scm_track' from module 'cobbler.modules'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/scm_track.py", line 25, in <module>
+    import cobbler.utils as utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'sync_post_restart_services' from module 'cobbler.modules'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/sync_post_restart_services.py", line 2, in <module>
+    import cobbler.module_loader as module_loader
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'configfile' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/configfile.py", line 27, in <module>
+    from cobbler.module_loader import get_module_name
+  File "/root/cobbler/cobbler/module_loader.py", line 31, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'ldap' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/ldap.py", line 29, in <module>
+    import cobbler.api as cobbler_api
+  File "/root/cobbler/cobbler/api.py", line 29, in <module>
+    from cobbler.actions import status, dlcontent, hardlink, sync, buildiso, replicate, report, log, acl, check, reposync
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+/root/cobbler/cobbler/modules/authentication/pam.py:docstring of cobbler.modules.authentication.pam.authenticate:2: WARNING: Field list ends without a blank line; unexpected unindent.
+WARNING: autodoc: failed to import module 'passthru' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/passthru.py", line 17, in <module>
+    from cobbler import utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'spacewalk' from module 'cobbler.modules.authentication'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/authentication/spacewalk.py", line 25, in <module>
+    from cobbler.utils import log_exc
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'post_puppet' from module 'cobbler.modules.installation'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/installation/post_puppet.py", line 11, in <module>
+    import cobbler.utils as utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'post_report' from module 'cobbler.modules.installation'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/installation/post_report.py", line 12, in <module>
+    import cobbler.templar as templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'pre_puppet' from module 'cobbler.modules.installation'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/installation/pre_puppet.py", line 12, in <module>
+    import cobbler.utils as utils
+  File "/root/cobbler/cobbler/utils.py", line 45, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'bind' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/bind.py", line 31, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'dnsmasq' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/dnsmasq.py", line 28, in <module>
+    import cobbler.templar as templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'genders' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/genders.py", line 5, in <module>
+    import cobbler.templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'import_signatures' from module 'cobbler.modules.managers'; the following exception was raised:
+No module named 'magic'
+WARNING: autodoc: failed to import module 'in_tftpd' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/in_tftpd.py", line 25, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'isc' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/isc.py", line 29, in <module>
+    import cobbler.templar as templar
+  File "/root/cobbler/cobbler/templar.py", line 41, in <module>
+    from . import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'ndjbdns' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/ndjbdns.py", line 30, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'tftpd_py' from module 'cobbler.modules.managers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/managers/tftpd_py.py", line 22, in <module>
+    import cobbler.clogger as clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'file' from module 'cobbler.modules.serializers'; the following exception was raised:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sphinx/ext/autodoc/importer.py", line 154, in import_module
+    __import__(modname)
+  File "/root/cobbler/cobbler/modules/serializers/file.py", line 30, in <module>
+    import cobbler.api as capi
+  File "/root/cobbler/cobbler/api.py", line 29, in <module>
+    from cobbler.actions import status, dlcontent, hardlink, sync, buildiso, replicate, report, log, acl, check, reposync
+  File "/root/cobbler/cobbler/actions/status.py", line 30, in <module>
+    from cobbler import clogger
+  File "/root/cobbler/cobbler/clogger.py", line 34, in <module>
+    logging.config.fileConfig('/etc/cobbler/logging_config.conf')
+  File "/usr/lib/python3.8/logging/config.py", line 71, in fileConfig
+    formatters = _create_formatters(cp)
+  File "/usr/lib/python3.8/logging/config.py", line 104, in _create_formatters
+    flist = cp["formatters"]["keys"]
+  File "/usr/lib/python3.8/configparser.py", line 960, in __getitem__
+    raise KeyError(key)
+KeyError: 'formatters'
+
+WARNING: autodoc: failed to import module 'urls' from module 'cobbler.web'; the following exception was raised:
+No module named 'django'
+WARNING: autodoc: failed to import module 'views' from module 'cobbler.web'; the following exception was raised:
+No module named 'django'
+WARNING: autodoc: failed to import module 'site' from module 'cobbler.web.templatetags'; the following exception was raised:
+No module named 'django'
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+writing... cobbler.1 { } /root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+/root/cobbler/docs/cobbler.rst:: WARNING: "table cell spanning" not supported
+cobblerd.8 { } cobbler.conf.5 { } 
+build succeeded, 90 warnings.
+
+The manual pages are in build/sphinx/man.
+running build_cfg
+running install_lib
+creating /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/module_loader.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/tftpgen.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/remote.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/download_manager.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/utils.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/grub.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/validate.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/cobblerd.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/template_api.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+creating /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/mgmtclass.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/system.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/profile.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/item.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/package.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/image.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/file.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/repo.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+copying build/lib/cobbler/items/distro.py -> /usr/local/lib/python3.8/dist-packages/cobbler/items
+creating /usr/local/lib/python3.8/dist-packages/cobbler/web
+copying build/lib/cobbler/web/views.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web
+copying build/lib/cobbler/web/field_ui_info.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web
+copying build/lib/cobbler/web/manage.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web
+copying build/lib/cobbler/web/urls.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web
+copying build/lib/cobbler/web/settings.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web
+copying build/lib/cobbler/web/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web
+creating /usr/local/lib/python3.8/dist-packages/cobbler/web/templatetags
+copying build/lib/cobbler/web/templatetags/site.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web/templatetags
+copying build/lib/cobbler/web/templatetags/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/web/templatetags
+creating /usr/local/lib/python3.8/dist-packages/cobbler/modules
+creating /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/isc.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/import_signatures.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/tftpd_py.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/genders.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/bind.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/dnsmasq.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/in_tftpd.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/ndjbdns.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/managers/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers
+copying build/lib/cobbler/modules/scm_track.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules
+creating /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers
+copying build/lib/cobbler/modules/serializers/mongodb.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers
+copying build/lib/cobbler/modules/serializers/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers
+copying build/lib/cobbler/modules/serializers/file.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers
+creating /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/post_log.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/post_puppet.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/post_power.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/pre_log.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/pre_clear_anamon_logs.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/post_report.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/installation/pre_puppet.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation
+copying build/lib/cobbler/modules/nsupdate_add_system_post.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules
+copying build/lib/cobbler/modules/nsupdate_delete_system_pre.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules
+copying build/lib/cobbler/modules/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules
+copying build/lib/cobbler/modules/sync_post_restart_services.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules
+copying build/lib/cobbler/modules/sync_post_wingen.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules
+creating /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/denyall.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/passthru.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/configfile.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/pam.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/spacewalk.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/testing.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+copying build/lib/cobbler/modules/authentication/ldap.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication
+creating /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization
+copying build/lib/cobbler/modules/authorization/configfile.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization
+copying build/lib/cobbler/modules/authorization/ownership.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization
+copying build/lib/cobbler/modules/authorization/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization
+copying build/lib/cobbler/modules/authorization/allowall.py -> /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization
+copying build/lib/cobbler/clogger.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/autoinstallgen.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/cli.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/power_manager.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/cexceptions.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/resource.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/serializer.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/configgen.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/yumgen.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/settings.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/field_info.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/autoinstall_manager.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+creating /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/acl.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/sync.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/hardlink.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/check.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/dlcontent.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/litesync.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/status.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/replicate.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/report.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/log.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/reposync.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/actions/buildiso.py -> /usr/local/lib/python3.8/dist-packages/cobbler/actions
+copying build/lib/cobbler/api.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+creating /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/systems.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/images.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/distros.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/mgmtclasses.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/manager.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/repos.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/__init__.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/packages.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/collection.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/profiles.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/cobbler_collections/files.py -> /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections
+copying build/lib/cobbler/templar.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+copying build/lib/cobbler/services.py -> /usr/local/lib/python3.8/dist-packages/cobbler
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/module_loader.py to module_loader.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/tftpgen.py to tftpgen.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/remote.py to remote.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/download_manager.py to download_manager.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/utils.py to utils.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/grub.py to grub.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/validate.py to validate.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobblerd.py to cobblerd.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/template_api.py to template_api.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/mgmtclass.py to mgmtclass.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/system.py to system.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/profile.py to profile.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/item.py to item.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/package.py to package.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/image.py to image.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/file.py to file.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/repo.py to repo.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/items/distro.py to distro.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/views.py to views.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/field_ui_info.py to field_ui_info.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/manage.py to manage.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/urls.py to urls.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/settings.py to settings.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/templatetags/site.py to site.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/web/templatetags/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/isc.py to isc.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/import_signatures.py to import_signatures.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/tftpd_py.py to tftpd_py.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/genders.py to genders.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/bind.py to bind.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/dnsmasq.py to dnsmasq.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/in_tftpd.py to in_tftpd.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/ndjbdns.py to ndjbdns.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/managers/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/scm_track.py to scm_track.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers/mongodb.py to mongodb.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/serializers/file.py to file.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/post_log.py to post_log.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/post_puppet.py to post_puppet.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/post_power.py to post_power.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/pre_log.py to pre_log.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/pre_clear_anamon_logs.py to pre_clear_anamon_logs.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/post_report.py to post_report.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/installation/pre_puppet.py to pre_puppet.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/nsupdate_add_system_post.py to nsupdate_add_system_post.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/nsupdate_delete_system_pre.py to nsupdate_delete_system_pre.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/sync_post_restart_services.py to sync_post_restart_services.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/sync_post_wingen.py to sync_post_wingen.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/denyall.py to denyall.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/passthru.py to passthru.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/configfile.py to configfile.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/pam.py to pam.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/spacewalk.py to spacewalk.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/testing.py to testing.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authentication/ldap.py to ldap.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization/configfile.py to configfile.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization/ownership.py to ownership.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/modules/authorization/allowall.py to allowall.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/clogger.py to clogger.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/autoinstallgen.py to autoinstallgen.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cli.py to cli.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/power_manager.py to power_manager.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cexceptions.py to cexceptions.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/resource.py to resource.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/serializer.py to serializer.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/configgen.py to configgen.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/yumgen.py to yumgen.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/settings.py to settings.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/field_info.py to field_info.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/autoinstall_manager.py to autoinstall_manager.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/acl.py to acl.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/sync.py to sync.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/hardlink.py to hardlink.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/check.py to check.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/dlcontent.py to dlcontent.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/litesync.py to litesync.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/status.py to status.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/replicate.py to replicate.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/report.py to report.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/log.py to log.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/reposync.py to reposync.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/actions/buildiso.py to buildiso.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/api.py to api.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/systems.py to systems.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/images.py to images.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/distros.py to distros.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/mgmtclasses.py to mgmtclasses.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/manager.py to manager.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/repos.py to repos.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/__init__.py to __init__.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/packages.py to packages.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/collection.py to collection.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/profiles.py to profiles.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/cobbler_collections/files.py to files.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/templar.py to templar.cpython-38.pyc
+byte-compiling /usr/local/lib/python3.8/dist-packages/cobbler/services.py to services.cpython-38.pyc
+running install_data
+copying bin/tftpd.py -> /usr/local/sbin
+copying bin/fence_ipmitool -> /usr/local/sbin
+copying build/config/apache/cobbler.conf -> /etc/apache2/conf-available
+copying build/config/apache/cobbler_web.conf -> /etc/apache2/conf-available
+creating /var/lib/cobbler
+creating /var/lib/cobbler/templates
+copying autoinstall_templates/sample_esxi5.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample_old.seed -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample_esxi6.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/legacy.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample_autoyast.xml -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample_legacy.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/powerkvm.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample_esxi7.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample_esxi4.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/esxi4-ks.cfg -> /var/lib/cobbler/templates
+copying autoinstall_templates/pxerescue.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample.seed -> /var/lib/cobbler/templates
+copying autoinstall_templates/esxi5-ks.cfg -> /var/lib/cobbler/templates
+copying autoinstall_templates/default.ks -> /var/lib/cobbler/templates
+copying autoinstall_templates/sample.ks -> /var/lib/cobbler/templates
+creating /var/lib/cobbler/templates/install_profiles
+creating /var/lib/cobbler/snippets
+copying autoinstall_snippets/post_anamon -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/partition_select -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/preseed_apt_repo_config -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/pre_partition_select -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/download_config_files -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/autoinstall_done -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/cobbler_register -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/keep_cfengine_keys -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/log_ks_post -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/autoinstall_start -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/koan_environment -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/post_install_network_config -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/network_config_esxi -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/SuSE/hosts.xml -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/SuSE/networking.xml -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/SuSE/proxy.xml -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/SuSE/kdump.xml -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/SuSE/addons.xml -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/SuSE/suse_scriptwrapper.xml -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/main_partition_select -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/pre_install_network_config -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/download_config_files_deb -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/keep_rudder_uuid -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/log_ks_pre -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/keep_files -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/network_config_esx -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/keep_rudder_keys -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/save_boot_device -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/rhn_certificate_based_register -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/restore_boot_device -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/post_install_kernel_options -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/network_config -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/puppet_register_if_enabled -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/puppet_install_if_enabled -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/keep_rhn_keys -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/pre_anamon -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/keep_ssh_host_keys -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/log_ks_post_nochroot -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/post_install_network_config_deb -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/post_koan_add_reinstall_entry -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/redhat_register -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/post_run_deb -> /var/lib/cobbler/snippets
+copying autoinstall_snippets/late_apt_repo_config -> /var/lib/cobbler/snippets
+creating /var/lib/cobbler/scripts
+copying autoinstall_scripts/preseed_early_default -> /var/lib/cobbler/scripts
+copying autoinstall_scripts/preseed_nochroot_late_default -> /var/lib/cobbler/scripts
+copying autoinstall_scripts/preseed_late_default -> /var/lib/cobbler/scripts
+copying config/cobbler/distro_signatures.json -> /var/lib/cobbler
+creating /usr/local/share/cobbler
+creating /usr/local/share/cobbler/web
+copying web/cobbler.wsgi -> /usr/local/share/cobbler/web
+creating /var/www/cobbler_webui_content
+copying web/static/cobbler.js -> /var/www/cobbler_webui_content
+copying web/static/favicon.png -> /var/www/cobbler_webui_content
+copying web/static/index.html -> /var/www/cobbler_webui_content
+copying web/static/jsGrowl.js -> /var/www/cobbler_webui_content
+copying web/static/logo-cobbler.png -> /var/www/cobbler_webui_content
+copying web/static/tooltip.png -> /var/www/cobbler_webui_content
+copying web/static/style.css -> /var/www/cobbler_webui_content
+copying web/static/jquery.min.js -> /var/www/cobbler_webui_content
+copying web/static/jsGrowl.css -> /var/www/cobbler_webui_content
+copying web/static/jquery-ui.min.js -> /var/www/cobbler_webui_content
+copying web/static/jsgrowl_side_hover.png -> /var/www/cobbler_webui_content
+copying web/static/jquery-ui.css -> /var/www/cobbler_webui_content
+copying web/static/jsGrowl_jquery.js -> /var/www/cobbler_webui_content
+copying web/static/jsgrowl_close.png -> /var/www/cobbler_webui_content
+copying web/static/jsgrowl_middle_hover.png -> /var/www/cobbler_webui_content
+copying web/static/jsgrowl_corners.png -> /var/www/cobbler_webui_content
+copying web/static/jsgrowl_corners_hover.png -> /var/www/cobbler_webui_content
+creating /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_highlight-soft_75_cccccc_1x100.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-icons_454545_256x240.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_glass_65_ffffff_1x400.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_flat_75_ffffff_40x100.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_glass_75_e6e6e6_1x400.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_glass_95_fef1ec_1x400.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_glass_55_fbf9ee_1x400.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_glass_75_dadada_1x400.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-icons_cd0a0a_256x240.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-icons_222222_256x240.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-icons_888888_256x240.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-bg_flat_0_aaaaaa_40x100.png -> /var/www/cobbler_webui_content/images
+copying web/static/images/ui-icons_2e83ff_256x240.png -> /var/www/cobbler_webui_content/images
+creating /usr/local/share/cobbler/bin
+copying scripts/settings-migration-v1-to-v2.sh -> /usr/local/share/cobbler/bin
+copying scripts/mkgrub.sh -> /usr/local/share/cobbler/bin
+creating /usr/local/share/cobbler/web/templates
+copying web/templates/task_created.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/import.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/aifile_list.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/generic_edit.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/login.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/eventlog.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/paginate.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/index.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/error_page.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/snippet_list.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/snippet_edit.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/master.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/blank.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/check.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/aifile_edit.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/filter.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/item.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/settings.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/generic_list.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/empty.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/events.tmpl -> /usr/local/share/cobbler/web/templates
+copying web/templates/enoaccess.tmpl -> /usr/local/share/cobbler/web/templates
+creating /var/lib/cobbler/webui_sessions
+creating /var/lib/cobbler/loaders
+creating /var/www/cobbler
+creating /var/www/cobbler/misc
+copying misc/anamon.init -> /var/www/cobbler/misc
+copying misc/anamon -> /var/www/cobbler/misc
+creating /etc/cobbler
+copying build/config/apache/cobbler.conf -> /etc/cobbler
+copying build/config/apache/cobbler_web.conf -> /etc/cobbler
+copying build/config/service/cobblerd.service -> /etc/cobbler
+copying build/config/cobbler/settings -> /etc/cobbler
+creating /etc/cobbler/settings.d
+copying config/cobbler/settings.d/nsupdate.settings -> /etc/cobbler/settings.d
+copying config/cobbler/settings.d/manage_genders.settings -> /etc/cobbler/settings.d
+copying config/cobbler/settings.d/bind_manage_ipmi.settings -> /etc/cobbler/settings.d
+copying config/cobbler/auth.conf -> /etc/cobbler
+copying config/cobbler/modules.conf -> /etc/cobbler
+copying config/cobbler/mongodb.conf -> /etc/cobbler
+copying config/cobbler/users.conf -> /etc/cobbler
+copying config/cobbler/users.digest -> /etc/cobbler
+copying config/cheetah/cheetah_macros -> /etc/cobbler
+copying config/rotate/cobblerd_rotate -> /etc/cobbler
+copying config/rsync/import_rsync_whitelist -> /etc/cobbler
+copying config/rsync/rsync.exclude -> /etc/cobbler
+copying config/version -> /etc/cobbler
+copying templates/etc/named.template -> /etc/cobbler
+copying templates/etc/genders.template -> /etc/cobbler
+copying templates/etc/secondary.template -> /etc/cobbler
+copying templates/etc/zone.template -> /etc/cobbler
+copying templates/etc/dnsmasq.template -> /etc/cobbler
+copying templates/etc/rsync.template -> /etc/cobbler
+copying templates/etc/dhcp.template -> /etc/cobbler
+copying templates/etc/ndjbdns.template -> /etc/cobbler
+creating /etc/cobbler/iso
+copying templates/iso/buildiso.template -> /etc/cobbler/iso
+creating /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxeprofile_esxi.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_local.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi60.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi65.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxelocal.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi5.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_esxi6.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxesystem_esxi.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_linux.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxesystem.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi70.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_esxi5.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi67.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxelocal_ia64.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/grubprofile.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxeprofile.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxedefault.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi70u1.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_windows.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/grubsystem.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_esxi7.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxesystem_ppc.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/gpxe_system_freebsd.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxesystem_ia64.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi55.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxesystem_arm.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/pxeprofile_arm.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/bootcfg_esxi51.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/yaboot_ppc.template -> /etc/cobbler/boot_loader_conf
+copying templates/boot_loader_conf/grublocal.template -> /etc/cobbler/boot_loader_conf
+copying config/bash/completion/cobbler -> /usr/share/bash-completion/completions
+creating /var/lib/cobbler/grub_config
+copying config/grub/grub.cfg -> /var/lib/cobbler/grub_config
+copying config/grub/README.grubconfig -> /var/lib/cobbler/grub_config
+creating /var/lib/cobbler/grub_config/grub
+copying config/grub/grub/local_legacy.cfg -> /var/lib/cobbler/grub_config/grub
+copying config/grub/grub/local_efi.cfg -> /var/lib/cobbler/grub_config/grub
+copying config/grub/grub/grub.cfg -> /var/lib/cobbler/grub_config/grub
+copying config/grub/grub/local_powerpc-ieee1275.cfg -> /var/lib/cobbler/grub_config/grub
+creating /srv/tftpboot
+creating /srv/tftpboot/boot
+creating /srv/tftpboot/etc
+creating /srv/tftpboot/grub
+creating /srv/tftpboot/images
+creating /srv/tftpboot/images2
+creating /srv/tftpboot/ppc
+creating /srv/tftpboot/s390x
+creating /srv/tftpboot/pxelinux.cfg
+creating /srv/tftpboot/grub/system
+creating /srv/tftpboot/grub/system_link
+creating /var/lib/cobbler/grub_config/grub/system
+creating /var/lib/cobbler/grub_config/grub/system_link
+creating /etc/cobbler/reporting
+copying templates/reporting/build_report_email.template -> /etc/cobbler/reporting
+creating /var/lib/cobbler/triggers
+creating /var/lib/cobbler/triggers/add
+creating /var/lib/cobbler/triggers/add/distro
+creating /var/lib/cobbler/triggers/add/distro/pre
+creating /var/lib/cobbler/triggers/add/distro/post
+creating /var/lib/cobbler/triggers/add/profile
+creating /var/lib/cobbler/triggers/add/profile/pre
+creating /var/lib/cobbler/triggers/add/profile/post
+creating /var/lib/cobbler/triggers/add/system
+creating /var/lib/cobbler/triggers/add/system/pre
+creating /var/lib/cobbler/triggers/add/system/post
+creating /var/lib/cobbler/triggers/add/repo
+creating /var/lib/cobbler/triggers/add/repo/pre
+creating /var/lib/cobbler/triggers/add/repo/post
+creating /var/lib/cobbler/triggers/add/mgmtclass
+creating /var/lib/cobbler/triggers/add/mgmtclass/pre
+creating /var/lib/cobbler/triggers/add/mgmtclass/post
+creating /var/lib/cobbler/triggers/add/package
+creating /var/lib/cobbler/triggers/add/package/pre
+creating /var/lib/cobbler/triggers/add/package/post
+creating /var/lib/cobbler/triggers/add/file
+creating /var/lib/cobbler/triggers/add/file/pre
+creating /var/lib/cobbler/triggers/add/file/post
+creating /var/lib/cobbler/triggers/delete
+creating /var/lib/cobbler/triggers/delete/distro
+creating /var/lib/cobbler/triggers/delete/distro/pre
+creating /var/lib/cobbler/triggers/delete/distro/post
+creating /var/lib/cobbler/triggers/delete/profile
+creating /var/lib/cobbler/triggers/delete/profile/pre
+creating /var/lib/cobbler/triggers/delete/profile/post
+creating /var/lib/cobbler/triggers/delete/system
+creating /var/lib/cobbler/triggers/delete/system/pre
+creating /var/lib/cobbler/triggers/delete/system/post
+creating /var/lib/cobbler/triggers/delete/repo
+creating /var/lib/cobbler/triggers/delete/repo/pre
+creating /var/lib/cobbler/triggers/delete/repo/post
+creating /var/lib/cobbler/triggers/delete/mgmtclass
+creating /var/lib/cobbler/triggers/delete/mgmtclass/pre
+creating /var/lib/cobbler/triggers/delete/mgmtclass/post
+creating /var/lib/cobbler/triggers/delete/package
+creating /var/lib/cobbler/triggers/delete/package/pre
+creating /var/lib/cobbler/triggers/delete/package/post
+creating /var/lib/cobbler/triggers/delete/file
+creating /var/lib/cobbler/triggers/delete/file/pre
+creating /var/lib/cobbler/triggers/delete/file/post
+creating /var/lib/cobbler/triggers/install
+creating /var/lib/cobbler/triggers/install/pre
+creating /var/lib/cobbler/triggers/install/post
+creating /var/lib/cobbler/triggers/install/firstboot
+creating /var/lib/cobbler/triggers/sync
+creating /var/lib/cobbler/triggers/sync/pre
+creating /var/lib/cobbler/triggers/sync/post
+creating /var/lib/cobbler/triggers/change
+creating /var/lib/cobbler/triggers/task
+creating /var/lib/cobbler/triggers/task/distro
+creating /var/lib/cobbler/triggers/task/distro/pre
+creating /var/lib/cobbler/triggers/task/distro/post
+creating /var/lib/cobbler/triggers/task/profile
+creating /var/lib/cobbler/triggers/task/profile/pre
+creating /var/lib/cobbler/triggers/task/profile/post
+creating /var/lib/cobbler/triggers/task/system
+creating /var/lib/cobbler/triggers/task/system/pre
+creating /var/lib/cobbler/triggers/task/system/post
+creating /var/lib/cobbler/triggers/task/repo
+creating /var/lib/cobbler/triggers/task/repo/pre
+creating /var/lib/cobbler/triggers/task/repo/post
+creating /var/lib/cobbler/triggers/task/mgmtclass
+creating /var/lib/cobbler/triggers/task/mgmtclass/pre
+creating /var/lib/cobbler/triggers/task/mgmtclass/post
+creating /var/lib/cobbler/triggers/task/package
+creating /var/lib/cobbler/triggers/task/package/pre
+creating /var/lib/cobbler/triggers/task/package/post
+creating /var/lib/cobbler/triggers/task/file
+creating /var/lib/cobbler/triggers/task/file/pre
+creating /var/lib/cobbler/triggers/task/file/post
+creating /var/lib/cobbler/collections
+creating /var/lib/cobbler/collections/distros
+creating /var/lib/cobbler/collections/images
+creating /var/lib/cobbler/collections/profiles
+creating /var/lib/cobbler/collections/repos
+creating /var/lib/cobbler/collections/systems
+creating /var/lib/cobbler/collections/mgmtclasses
+creating /var/lib/cobbler/collections/packages
+creating /var/lib/cobbler/collections/files
+creating /var/log/cobbler
+creating /var/log/cobbler/kicklog
+creating /var/log/cobbler/syslog
+creating /var/log/httpd
+creating /var/log/httpd/cobbler
+creating /var/log/cobbler/anamon
+creating /var/log/cobbler/tasks
+creating /var/www/cobbler/localmirror
+creating /var/www/cobbler/repo_mirror
+creating /var/www/cobbler/distro_mirror
+creating /var/www/cobbler/distro_mirror/config
+creating /var/www/cobbler/links
+creating /var/www/cobbler/pub
+creating /var/www/cobbler/rendered
+creating /var/www/cobbler/images
+creating /var/www/cobbler/svc
+copying svc/services.py -> /var/www/cobbler/svc/
+copying cobbler/web/settings.py -> /usr/local/share/cobbler/web/
+creating /etc/cobbler/zone_templates
+copying templates/zone_templates/foo.example.com -> /etc/cobbler/zone_templates
+copying config/cobbler/logging_config.conf -> /etc/cobbler
+copying build/sphinx/man/cobbler.1 -> /usr/share/man/man1
+copying build/sphinx/man/cobbler.conf.5 -> /usr/share/man/man5
+copying build/sphinx/man/cobblerd.8 -> /usr/share/man/man8
+creating /usr/share/cobbler
+creating /usr/share/cobbler/tests
+copying tests/utils_test.py -> /usr/share/cobbler/tests
+copying tests/conftest.py -> /usr/share/cobbler/tests
+copying tests/__init__.py -> /usr/share/cobbler/tests
+creating /usr/share/cobbler/tests/cli
+copying tests/cli/conftest.py -> /usr/share/cobbler/tests/cli
+copying tests/cli/cobbler_cli_object_test.py -> /usr/share/cobbler/tests/cli
+copying tests/cli/__init__.py -> /usr/share/cobbler/tests/cli
+copying tests/cli/cobbler_cli_direct_test.py -> /usr/share/cobbler/tests/cli
+creating /usr/share/cobbler/tests/modules
+copying tests/modules/__init__.py -> /usr/share/cobbler/tests/modules
+creating /usr/share/cobbler/tests/modules/authentication
+copying tests/modules/authentication/pam_test.py -> /usr/share/cobbler/tests/modules/authentication
+copying tests/modules/authentication/configfile_test.py -> /usr/share/cobbler/tests/modules/authentication
+copying tests/modules/authentication/passthrough_test.py -> /usr/share/cobbler/tests/modules/authentication
+copying tests/modules/authentication/__init__.py -> /usr/share/cobbler/tests/modules/authentication
+creating /usr/share/cobbler/tests/views
+copying tests/views/logon_view_test.py -> /usr/share/cobbler/tests/views
+copying tests/views/edit_items_view_test.py -> /usr/share/cobbler/tests/views
+copying tests/views/list_items_view_test.py -> /usr/share/cobbler/tests/views
+copying tests/views/actions_view_test.py -> /usr/share/cobbler/tests/views
+copying tests/views/conftest.py -> /usr/share/cobbler/tests/views
+copying tests/views/__init__.py -> /usr/share/cobbler/tests/views
+creating /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/file_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/non_object_calls_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/mgmt_class_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/miscellaneous_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/background_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/image_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/conftest.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/__init__.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/package_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/repo_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+copying tests/xmlrpcapi/distro_profile_system_test.py -> /usr/share/cobbler/tests/xmlrpcapi
+running install_egg_info
+running egg_info
+creating cobbler.egg-info
+writing cobbler.egg-info/PKG-INFO
+writing dependency_links to cobbler.egg-info/dependency_links.txt
+writing requirements to cobbler.egg-info/requires.txt
+writing top-level names to cobbler.egg-info/top_level.txt
+writing manifest file 'cobbler.egg-info/SOURCES.txt'
+reading manifest file 'cobbler.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching 'AUTHORS'
+writing manifest file 'cobbler.egg-info/SOURCES.txt'
+Copying cobbler.egg-info to /usr/local/lib/python3.8/dist-packages/cobbler-3.2.0.egg-info
+running install_scripts
+copying build/scripts-3.8/cobblerd -> /usr/local/bin
+copying build/scripts-3.8/cobbler-ext-nodes -> /usr/local/bin
+copying build/scripts-3.8/cobbler -> /usr/local/bin
+changing mode of /usr/local/bin/cobblerd to 755
+changing mode of /usr/local/bin/cobbler-ext-nodes to 755
+changing mode of /usr/local/bin/cobbler to 755
